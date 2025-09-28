@@ -1,6 +1,6 @@
 // Object Literal define
 // user1 object
-const user1 = {
+/*const user1 = {
     // properties
     u_id:1,
     u_name:"Jay",
@@ -44,7 +44,7 @@ function User(u_id,u_name,u_email,u_password){
 // user2 object
 const user2=new User(2,"May","may@example.com","may@123");
 user2.login();
-user2.logout();
+user2.logout();*/
 
 
 //class define
@@ -58,5 +58,4 @@ class User{
 }
 
 const user3= new User(3,"manu","manu@example.com","manu@123");
-user3.login();
-user3.logout();
+console.log(user3);
