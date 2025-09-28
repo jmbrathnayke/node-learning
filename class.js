@@ -1,4 +1,4 @@
-// Object Literal define
+// Object Literal define (type1)
 // user1 object
 /*const user1 = {
     // properties
@@ -22,7 +22,7 @@
 user1.login();
 user1.logout();
 
-// Object Constructor define
+// Object Constructor define (type2)
 // User object constructor
 function User(u_id,u_name,u_email,u_password){
     this.u_id=u_id;
@@ -48,14 +48,37 @@ user2.logout();*/
 
 
 //class define
+//(type3)
 class User{
-    constructor(u_id,u_name,u_email,u_password){
-        this.u_id=1;
-        this.u_name="manu";
-        this.u_email="manu@example.com";
-        this.u_password="manu@123";
+    
+    constructor(){
+        this.u_id;
+        this.u_name;
+        this.u_email;
+        this.u_password;
+    }
+    login(){
+        console.log(this.u_name+" logged in");
+    }
+    //arrow function
+    logout = () =>{
+        console.log(user3.u_name+" logged out");
     }
 }
 
-const user3= new User(3,"manu","manu@example.com","manu@123");
+//user3 object
+const user3= new User();
+
+user3.u_id=3;
+user3.u_name="manu";
+user3.u_email="manu@example.com";
+user3.u_password="manu@123";
 console.log(user3);
+
+//give properties one by one
+for(const x in user3){
+    console.log(x);
+}
+
+user3.login();
+user3.logout();
